@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+.Home{
+   background-color:   #5271ff ;
+   width: 100vw;
+   height: 100vh;
+   text-align: center;
+   
+}
+.navbarr{
+    background-color: #5271ff;
+    width: 100%;
+  height:  auto;
+  display: flex;
+  justify-content:    space-between;
+  align-items:  flex-end;
+  border-bottom: solid  rgba(0, 0, 0, 0.13) 1px;
+}
+  
+  .navlist{
+      display: flex;
+    width:  max-content;
+     margin-right: 1rem;
+    align-items: flex-end;
+    margin-bottom: 0;
+    
+ }
+ .navlist li{
+     list-style: none;
+      padding: 0 1rem; 
+      
+ } 
+ .navlist li:hover{ 
+     border-bottom: solid black 2px;
+}
+ .navlist  a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Caveat',cursive;
+    font-weight: 700;
+    font-size: 2.3rem;
+    transition: 1s;
+}
+.navlist a:hover{
+    color: black;
+     
+} 
+.navlogo{
+    width: 5%;
+    margin: 0 0 0 0.2rem;
+
+}
+ /* navbar over */
+
+ .title{
+      
+    font-family: 'Caveat';
+    font-size: 7rem;
+    color: black;
+ }
+.belowline  {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1200px;
+     max-height: 5%;
+}
+ .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .icons li{
+    list-style: none;
+
+ }
+ .iconlist{
+ color: black;
+ 
+ }
+ .text-{
+  color: black;
+ }
