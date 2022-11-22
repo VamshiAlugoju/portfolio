@@ -1,20 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 .Home{
-   background-color:   #5271ff ;
-   width: 100vw;
-   height: 100vh;
+   background-color:  #00203FFF ;
+   width:  100%;
+   height:   100vh;
    text-align: center;
-   
+   padding-top: 5%;
 }
+/* #5271ff;   #00539Cff */
 .navbarr{
-    background-color: #5271ff;
+     position: fixed;
+    background-color:  #00203FFF ;
     width: 100%;
   height:  auto;
   display: flex;
   justify-content:    space-between;
   align-items:  flex-end;
-  border-bottom: solid  rgba(0, 0, 0, 0.13) 1px;
+  border-bottom: solid  rgba(0, 0, 0, 1) 1px; 
+  /* 0.13 */
 }
   
   .navlist{
@@ -30,33 +33,41 @@
       padding: 0 1rem; 
       
  } 
- .navlist li:hover{ 
-     border-bottom: solid black 2px;
+ 
+.navactive{
+   border-bottom: solid yellow 2px;
 }
+
  .navlist  a{
     text-decoration: none;
-    color: white;
+    color:  black;
     font-family: 'Caveat',cursive;
     font-weight: 700;
-    font-size: 2.3rem;
+    font-size: 2rem;
     transition: 1s;
 }
 .navlist a:hover{
-    color: black;
+    color: blue;
      
 } 
 .navlogo{
     width: 5%;
-    margin: 0 0 0 0.2rem;
+    margin: 0 0 0 2.5rem;
 
 }
  /* navbar over */
 
  .title{
-      
+     display: inline-block;
     font-family: 'Caveat';
     font-size: 7rem;
     color: black;
+    cursor:default;
+    transition: 1s ease-in;
+ }
+ .title:hover{
+  color: blue;
+
  }
 .belowline  {
       margin: 0 auto;
@@ -68,15 +79,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5%;
  }
  .icons li{
     list-style: none;
+ }
+ .fa-brands{
+    font-size: 4rem;
+    color: black;
+    transition: 0.5s;
+ }
+ .fa-brands:hover{
+   color: blue;
+ }
 
+ .btn a{
+   color: black;
+   text-decoration: none;
+   font-family: 'Caveat';
+   font-weight: 700;
+   font-size: 1.5rem;
  }
- .iconlist{
- color: black;
+
+/* CSS */
  
- }
- .text-{
-  color: black;
- }

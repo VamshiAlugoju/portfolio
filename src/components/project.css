@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+.project{
+    height: 90vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color:    #ADEFD1ff;
+    position: relative;
+}
+/* #FBEAEB */
+
+.projecth1{
+    text-align: center;
+    font-family: 'Caveat' , "cursive";
+    font-size: 8vw;
+    text-decoration: underline;
+}
+ 
+.projectsdiv{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+}
+/* 1100 */
+@media  (max-width:1100px) {
+    .projectsdiv{
+        flex-direction: column;
+          align-items: center;
+         justify-content: space-around;
+    }
+    .projectItems{
+        margin: 10px 0;
+    }
+}
+.project > button{
+    margin: 20px ;
+position: absolute;
+left: 50%;
+transform: translate(-50% ,0);
+}
+.card{
+    width: auto;
+    background-color: rgba(245, 222, 179, 0.315);
+    
+}
