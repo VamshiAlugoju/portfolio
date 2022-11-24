@@ -13,8 +13,8 @@ export default function Navbar()
            
              <ul className="navlist">
               <li className="navitems navactive"> <a onClick={handlechange} href="#ww">home </a> </li>
-              <li className="navitems  "> <a onClick={handlechange} href="##">projects </a> </li>
-              <li className="navitems  "> <a onClick={handlechange} href="#ww"> about </a> </li>
+              <li className="navitems  "> <a onClick={handlechange} href="#project">projects </a> </li>
+              <li className="navitems  "> <a onClick={handlechange} href="#about"> about </a> </li>
               <li className="navitems  "> <a onClick={handlechange} href="#ww">about </a> </li>
               
                 

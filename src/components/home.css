@@ -54,7 +54,12 @@
 .navlogo{
     width: 5%;
     margin: 0 0 0 2.5rem;
-
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.navlogo:hover{
+   filter:  opacity(0.1) drop-shadow(0 0 0 blue) drop-shadow(0 0 0 blue)  drop-shadow(0 0 0 blue) drop-shadow(0 0 0 blue) drop-shadow(0 0 0 blue) drop-shadow(0 0 0 blue)  drop-shadow(0 0 0 blue);
+   
 }
  /* navbar over */
 
@@ -62,12 +67,12 @@
      display: inline-block;
     font-family: 'Caveat';
     font-size: 7rem;
-    color: black;
+    color: blue;
     cursor:default;
     transition: 1s ease-in;
  }
  .title:hover{
-  color: blue;
+  color: black;
 
  }
 .belowline  {

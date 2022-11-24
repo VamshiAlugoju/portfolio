@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 .project{
-    height: 90vh;
+   
     width: 100vw;
     overflow-x: hidden;
     background-color:    #ADEFD1ff;
     position: relative;
+    padding: 3rem 0;
+   
 }
 /* #FBEAEB */
 
@@ -32,10 +34,11 @@
     }
 }
 .project > button{
-    margin: 20px ;
-position: absolute;
-left: 50%;
-transform: translate(-50% ,0);
+    display: inline-block;
+   margin: 2rem 0 0 0 ;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 .card{
     width: auto;
