@@ -6,7 +6,7 @@ export default function Home()
 
      
     return(
-        <div  className="Home">
+        <div id='Home' className="Home">
             <h1  className="title">Hi</h1>
             <br/>
             <h1  className="title">I'm  webvital</h1>

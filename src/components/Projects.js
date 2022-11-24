@@ -7,7 +7,7 @@ export default function Projects()
         return(  <ProjectItems title={dat.title} about={dat.about} url={dat.img} />)
        })
     return(
-        <div className="project">
+        <div id="project" className="project">
             <h1 className="projecth1" >My Projects:</h1>
             <div className="projectsdiv">
                {items}
