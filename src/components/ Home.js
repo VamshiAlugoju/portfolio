@@ -2,11 +2,11 @@ import React from 'react';
 import "./home.css"
 export default function Home()
 {   
-     
-
+   
+ 
      
     return(
-        <div id='Home' className="Home">
+        <div  id='Home' className="Home section">
             <h1  className="title">Hi</h1>
             <br/>
             <h1  className="title">I'm  webvital</h1>

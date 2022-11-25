@@ -4,20 +4,21 @@ export default function Navbar()
 {  
      function handlechange(e)
      {
-          let item = e.target
-          console.log(item.className)
+          let btns = document.querySelectorAll('.navbarr .navlist li')
+           btns.forEach(btn=>{
+              btn.classList.remove("navactive")
+           })
+           e.target.parentNode.classList.add("navactive")
      }
     return(
         <div className="navbarr">
             <img className='navlogo' src="./images/logo1.png" alt="" /> 
            
              <ul className="navlist">
-              <li className="navitems navactive"> <a onClick={handlechange} href="#ww">home </a> </li>
-              <li className="navitems  "> <a onClick={handlechange} href="#project">projects </a> </li>
+              <li className="navitems navactive"> <a onClick={handlechange} href="#Home">home </a> </li>
+              <li onClick={handlechange} className="navitems  "> <a  href="#project">projects </a> </li>
               <li className="navitems  "> <a onClick={handlechange} href="#about"> about </a> </li>
               <li className="navitems  "> <a onClick={handlechange} href="#ww">about </a> </li>
-              
-                
              </ul>
         </div>
     )

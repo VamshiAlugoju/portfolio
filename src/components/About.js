@@ -9,7 +9,7 @@ export const About = () => {
            )
    })
   return (
-    <div id="about" className="about">
+    <div id="about" className="about section">
       <div className="left">
         <h1>About</h1>
         <p>
