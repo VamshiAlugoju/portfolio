@@ -46,3 +46,11 @@
     margin-left: -1em;
    font-size:  2rem;
 }
+
+@media  (max-width:580px) {
+    .footer li a{
+        
+        font-size: 1rem;
+        
+    }
+}

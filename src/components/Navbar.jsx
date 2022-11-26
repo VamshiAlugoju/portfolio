@@ -1,5 +1,6 @@
 import React from 'react'
-import "./home.css"
+import "./home.css"          //nav bar styles is in home.css
+
 export default function Navbar()
 {  
      function handlechange(e)

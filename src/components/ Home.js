@@ -17,7 +17,7 @@ export default function Home()
                 <li  className='iconlist'><a href="dummy"> <i className="fa-brands fa-instagram"></i> </a></li>
                 <li  className='iconlist'><a href="dummy"> <i className="fa-brands fa-facebook"></i> </a></li>
 
-            </ul>
+            </ul> 
 
        <button  className="btn btn-outline-dark my-4"  > <a href="www.google.com" > Contact me</a></button>
         </div>
