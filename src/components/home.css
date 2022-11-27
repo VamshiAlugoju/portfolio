@@ -33,8 +33,14 @@
  .navlist li{
      list-style: none;
       padding: 0 1rem; 
-      
+      color: black;
  } 
+ .navlist li:hover{
+   color: blue;
+ }
+ .navlist .active{
+   border-bottom: solid yellow 2px;
+ }
  
 .navactive{
    border-bottom: solid yellow 2px;
@@ -42,16 +48,12 @@
 
  .navlist  a{
     text-decoration: none;
-    color:  black;
     font-family: 'Caveat',cursive;
     font-weight: 700;
     font-size: 2rem;
     transition: 1s;
 }
-.navlist a:hover{
-    color: blue;
-     
-} 
+ 
 .navlogo{
     width: 5%;
     margin: 0 0 0 2.5rem;
@@ -73,6 +75,9 @@
     /* .navlist a{
       font-size: 1rem;
     } */
+    .firsth1{
+       margin: 20px;
+    }
 }
 
  /* navbar over */

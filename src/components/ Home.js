@@ -7,7 +7,7 @@ export default function Home()
      
     return(
         <div  id='Home' className="Home section">
-            <h1  className="title">Hi</h1>
+            <h1  className="title firsth1">Hi</h1>
             <br/>
             <h1  className="title">I'm  webvital</h1>
             <img  className='belowline' src="./images/belowline.png" alt="" />
