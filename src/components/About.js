@@ -1,13 +1,17 @@
 import React from "react";
-import "./about.css"
+import "./about.css";
 import { Icons } from "./Icons";
-import icons from "./icons.js"
+import icons from "./icons.js";
+
+
 export const About = () => {
-   const iconsimgs = icons.map(icon=>{
-           return(
-            <Icons key={icon.key} url={icon.url} title={ icon.title} />
-           )
-   })
+
+  
+  const iconsimgs = icons.map((icon) => {
+    return <Icons key={icon.key} url={icon.url} title={icon.title} />;
+  });
+
+
   return (
     <div id="about" className="about section">
       <div className="left">
@@ -31,9 +35,7 @@ export const About = () => {
       </div>
       <div className="right">
         <h1>Skills I Have:</h1>
-        <div className="icons-right">
-       {iconsimgs}
-        </div>
+        <div className="icons-right">{iconsimgs}</div>
       </div>
     </div>
   );

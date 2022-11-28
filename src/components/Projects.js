@@ -12,7 +12,7 @@ export default function Projects()
             <div className="projectsdiv">
                {items}
             </div>
-               <button className="btn btn-outline-primary btn-sm " >More Projects</button>
+               <button className="btn btn-dark btn-sm " >More Projects</button>
         </div>
     )
 }
