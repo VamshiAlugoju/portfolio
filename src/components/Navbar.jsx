@@ -3,34 +3,44 @@ import "./home.css"; //nav bar styles is in home.css
 import { Link } from "react-scroll";
 export default function Navbar() {
     
-    
-      
- 
-  function handlechange(e) {
-    //   let btns = document.querySelectorAll('.navbarr .navlist li')
-    //    btns.forEach(btn=>{
-    //       btn.classList.remove("navactive")
-    //    })
-    //    e.target.parentNode.classList.add("navactive")
-    console.log("hlel");
-  }
 
-  function handleactive(item)
-  {
-    let anchors = document.querySelectorAll('.navbarr .navlist li a')
-    anchors.forEach(anchor=>{
-           let boo =   anchor.classList.contains("active")
-             if(boo){
-              anchor.parentElement.classList.add("navactive")
+    let [yyy,setyyy] = React.useState(0)
+  const [bgnav,setbgnav] = React.useState({backgroundColor:"yellow"})
+  console.log(yyy)
+   React.useEffect(()=>{
+        const off = ()=>setyyy(window.scrollY)
+        window.removeEventListener('scroll', off);
+        window.addEventListener('scroll', off, { passive: true });
+        
+
+        setbgnav(prevnav=>{
+          if(yyy>600 && yyy<=1300 ){
+              return{
+               ...prevnav,
+               backgroundColor:" #ADEFD1ff"
+              }
+          }
+          else{
+             return{
+              ...prevnav,
+              backgroundColor:"  #00203FFF "
              }
-    })
-  }
+          }
+        
+      })
+   },[ yyy])
+ 
+ 
+  // #00203FFF 
+  
+
+
   return (
-    <div className="navbarr">
+    <div className="navbarr"   style={bgnav}>
       <img className="navlogo" src="./images/logo1.png" alt="" />
 
       <ul className="navlist">
-        <li  className="navitems navactive">
+        <li  className="navitems">
           {" "}
           <Link
             to="Home"
@@ -38,8 +48,8 @@ export default function Navbar() {
             duration={0}
             smooth={true}
             offset={0}
-            onClick={handlechange}
-            onSetActive={handleactive}
+            
+            activeClass="active"
           >
             home{" "}
           </Link>{" "}
@@ -52,8 +62,8 @@ export default function Navbar() {
             duration={0}
             smooth={true}
             offset={-20}
-            onClick={handlechange}
-            onSetActive={handleactive}
+            
+             
           >
             projects{" "}
           </Link>
@@ -65,8 +75,8 @@ export default function Navbar() {
             duration={0}
             smooth={true}
             offset={0}
-            onClick={handlechange}
-            onSetActive={handleactive}
+            
+             
           >
             about{" "}
           </Link>{" "}
@@ -78,8 +88,10 @@ export default function Navbar() {
             spy={false}
             duration={500}
             smooth={true}
-            offset={50}
-            onClick={handlechange}
+            offset={-20}
+            
+           
+
           >
             {" "}
             about{" "}
