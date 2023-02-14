@@ -40,5 +40,27 @@
 }
 .card {
   width: auto;
-  background-color: rgba(245, 222, 179, 0.315);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 1rem;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.card:hover{
+  background-color: rgb(176, 248, 255);
+}
+.card-body{
+  text-align: center;
+  color: black;
+}
+.card-body h4{
+  text-align: center;
+   text-transform: capitalize;
+}
+
+.project-img{
+  width: 12rem;
+  border-radius: 10px;
 }

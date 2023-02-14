@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css"; //nav bar styles is in home.css
 import { Link } from "react-scroll";
-
+import logo from "../images/logo1.png";
 
 
 export default function Navbar() {
@@ -14,7 +14,7 @@ export default function Navbar() {
     window.addEventListener("scroll", off, { passive: true });
 
     setbgnav((prevnav) => {
-      if (yyy > 600 && yyy <= 1300) {
+      if (yyy > 600 && yyy <= 1280) {
         return {
           ...prevnav,
           backgroundColor: " #ADEFD1ff",
@@ -32,7 +32,7 @@ export default function Navbar() {
 
   return (
     <div className="navbarr" style={bgnav}>
-     <img   className="navlogo" src="./images/logo1.png" alt="" />  
+     <img   className="navlogo" src={logo} alt="" />  
 
       <ul className="navlist">
         <li className="navitems">
@@ -46,30 +46,30 @@ export default function Navbar() {
             activeClass="active"
           >
             home{" "}
-          </Link>{" "}
+          </Link> 
         </li>
         <li className="navitems  ">
           {" "}
-          <Link to="project" spy={true} duration={0} smooth={true} offset={-20}>
+          <Link to="project" spy={true} duration={0} smooth={true} offset={0}>
             projects{" "}
           </Link>
         </li>
         <li className="navitems  ">
-          <Link to="about" spy={true} duration={0} smooth={true} offset={0}>
+          <Link to="about" spy={true} duration={0} smooth={true} offset={-50}>
             about{" "}
-          </Link>{" "}
+          </Link> 
         </li>
         <li className="navitems  ">
           {" "}
           <Link
-            to="about"
-            spy={false}
-            duration={500}
+            to="footer"
+            spy={true}
+            duration={0}
             smooth={true}
-            offset={-20}
+            offset={-200}
           >
             {" "}
-            about{" "}
+            contact{" "}
           </Link>
         </li>
       </ul>

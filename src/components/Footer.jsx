@@ -10,7 +10,8 @@ export const Footer = () => {
       </div>
 
       <li>
-        <a href="#">alugojuvamshi@gmail.com</a>
+         {/* eslint-disable-next-line  */}
+        <a >vamshialugoju024@gmail.com</a>
       </li>
     </div>
   );

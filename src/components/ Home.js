@@ -1,20 +1,19 @@
 import React from "react";
 import "./home.css";
-
-
 export default function Home() {
+
+    const belowline = require("../images/belowline.png")
   return (
     <div id="Home" className="Home section">
       <h1 className="title firsth1">Hi</h1>
       <br />
-      <h1 className="title">I'm webvital</h1>
-      <img className="belowline" src="./images/belowline.png" alt="" />
+      <h1 className="title">I'm Vamshi</h1>
+      <img className="belowline" src={belowline} alt="" />
       <ul className="icons">
         <li className="iconlist">
-          <a rel="noreferrer"  href="https://github.com/VamshiAlugoju" target={"_blank"}>
+          <a rel="noreferrer"   href="https://github.com/VamshiAlugoju" target={"_blank"}>
             {" "}
             <i className="fa-brands fa-github"></i>
-            
           </a>
         </li>
         <li className="iconlist">

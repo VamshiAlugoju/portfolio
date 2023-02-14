@@ -4,7 +4,7 @@ import data from "../data"
 export default function Projects()
 {  
        let items = data.map(dat=>{
-        return(  <ProjectItems key={dat.title} title={dat.title} about={dat.about} url={dat.img} />)
+        return(  <ProjectItems link={dat.link} key={dat.title} title={dat.title} about={dat.about} img={dat.img} />)
        })
     return(
         <div id="project" className="project section">
