@@ -1,12 +1,12 @@
-import java from "../images/icons/java.gif";
+import ex from "../images/icons/express240.png";
 import javascript from "../images/icons/javascript.gif"
-import react from "../images/icons/react.gif"
+// import react from "../images/icons/react.gif"
 import html from "../images/icons/html.gif"
 import css from "../images/icons/css.png"
 import nodejs from "../images/icons/nodejs.png"
-import json from "../images/icons/json.png"
+import sql from "../images/icons/sql96.png"
 import c from "../images/icons/c++.png";
-import boostrap from "../images/icons/bootstrap.png";
+import mongo from "../images/icons/mongodb482.png";
 
 
 const icons = [
@@ -16,27 +16,23 @@ const icons = [
     title: "Javascript",
   },
   {
-    key: 2,
-    url: react,
-    title: "React",
-  },
-  {
-    key: 3,
-    url:java,
-    title: "Java",
-  },
-  {
-    key: 4,
-    url:c,
-    title: "C++",
-  },
-  {
     key: 5,
     url:nodejs,
     title: "Nodejs",
   },
   {
     key: 6,
+    url:ex,
+    title: "Express js",
+  },
+  {
+    key: 4,
+    url:c,
+    title: "C++",
+  },
+
+  {
+    key: 3,
     url:html,
     title: "HTML",
   },
@@ -46,15 +42,17 @@ const icons = [
     title: "CSS",
   },
   {
-    key: 8,
-    url: boostrap ,
-    title: "Bootstrap",
+    key: 4,
+    url: sql,
+    title: "SQL",
   },
+
   {
-    key: 9,
-    url: json,
-    title: "Json",
+    key: 8,
+    url: mongo,
+    title: "MongodDb",
   },
+ 
 ];
 
 export default icons;
