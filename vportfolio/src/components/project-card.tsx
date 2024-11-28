@@ -7,8 +7,6 @@ import {
   CardTitle,
 } from "../components/ui/card";
 import { cn } from "../lib/utils";
-// import Image from "next/image";
-// import Link from "next/link";
 import Markdown from "react-markdown";
 
 interface Props {
@@ -46,10 +44,7 @@ export function ProjectCard({
         "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
     >
-      <a
-        href={href || "#"}
-        className={cn("block cursor-pointer", className)}
-      >
+      <a href={href || "#"} className={cn("block cursor-pointer", className)}>
         {video && (
           <video
             src={video}
